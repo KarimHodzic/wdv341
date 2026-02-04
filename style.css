@@ -1,0 +1,25 @@
+.background {
+    background-color: beige;
+}
+
+.container {
+    width: 1050px;
+    background-color: chocolate;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+main a:link, main a:visited {
+    color: rgb(89, 35, 1);
+    text-decoration: solid 5px underline;
+}
