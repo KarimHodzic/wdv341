@@ -25,9 +25,7 @@
           $mail->SMTPDebug = 2;
           $mail->isSMTP(); // Use SMTP to send.
           $mail->Host = 'smtp.gmail.com'; // Specify Gmail's SMTP server.
-          $mail->SMTPAuth = true; // Enable SMTP authentication.
-          $mail->Username = 'karimhodzic@gmail.com'; // Your full Gmail address.
-          $mail->Password = 'qaviqmdzqxidtphy'; // Your 16-character App Password.
+          $mail->SMTPAuth = true; // Enable SMTP authentication
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption.
           $mail->Port = 587; // TCP port for TLS.
 
