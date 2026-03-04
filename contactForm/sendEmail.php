@@ -15,7 +15,7 @@
     require 'PHPMailer/src/SMTP.php';
 
 
-    function sendEmail($to, $subject, $body) {
+    function sendEmail($name, $email, $subject, $body) {
       $mail = new PHPMailer(true);
 
       try {
@@ -33,7 +33,7 @@
 
           // Recipients
           $mail->setFrom('karimhodzic@gmail.com', 'Karim Hodzic'); // Sender's email and name.
-          $mail->addAddress($to, 'Karim Hodzic'); // Recipient's email and name.
+          $mail->addAddress($email, $name); // Recipient's email and name.
           // Optional: Add a CC or BCC recipient
           // $mail->addCC('cc_recipient@example.com');
           // $mail->addBCC('bcc_recipient@example.com');
